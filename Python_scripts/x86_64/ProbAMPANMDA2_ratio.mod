@@ -1,1 +1,0 @@
-../mods/ProbAMPANMDA2_ratio.mod

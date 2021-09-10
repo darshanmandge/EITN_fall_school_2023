@@ -1,1 +1,0 @@
-../mods/ProbAMPA.mod
