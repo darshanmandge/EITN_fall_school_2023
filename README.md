@@ -7,6 +7,7 @@
 In order to use this tutorial, you need to install NEURON: read how to install NEURON [here](How_to_Install_NEURON.txt)
 
 You will also need to compile to mod files:
+
     cd Jupyter_notebooks
     nrnivmodl mods
 
