@@ -3,4 +3,5 @@
 Jupyter_notebooks/.ipynb_checkpoints
 Jupyter_notebooks/x86_64
 Jupyter_notebooks/arm64
+Jupyter_notebooks/fitting_example/.ipynb_checkpoints/
 Jupyter_notebooks/fitting_example/*.png
