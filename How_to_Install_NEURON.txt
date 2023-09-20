@@ -1,5 +1,6 @@
 
-(After installing Python as instructed here: https://www.anaconda.com/distribution/)
+(After installing Python as instructed here: 
+https://www.python.org/downloads/ or https://docs.anaconda.com/free/anaconda/install/)
 
 ## Windows 
 1. Open https://www.neuron.yale.edu/neuron/download with your web browser. 
@@ -7,11 +8,42 @@
 3. Install NEURON and make sure to select "Set DOS environment. (Useful if ...)" when asked to select components to install.
 
 
-## macOS
+## macOS and linux
+1. Open the terminal and type pip3 install neuron.
+Troubleshooting: See the downloads page https://www.neuron.yale.edu/neuron/download
+
+
+To test that NEURON was installed correctly open jupyter notebook (or jupyter-lab) or any python3 shell and check if the following commands are working:
+from neuron import gui
+from neuron import h
+
+
+
+## Troubleshooting:
+
+1. Python troubleshooting: https://realpython.com/installing-python/
+2. (Ubuntu) - Can not compile mod files with nrnivmodl, get "/usr/bin/ld: cannot find -lncurses"
+  Solution: 
+    you need to install ncurses development, in ubuntu this is how to install it:
+                              sudo apt-get install libncurses-dev
+          
+## installation using virtual environment
+If you prefer to create a python virtual environment (https://docs.python.org/3/library/venv.html), you can create one by 
+
+python3 -m venv /path/to/new/virtual/environment
+
+Replace /path/to/new/virtual/environment with the folder you want. Activate the venv by 
+
+source /path/to/new/virtual/environment/bin/activate 
+
+Then do 
+pip3 install neuron
+
+# Old installation instruction 
+## macOS 
 1. Open https://www.neuron.yale.edu/neuron/download with your web browser. 
 2. Click on -  Download OSX installer.
 3. Install NEURON and click YES to all questions.
-
 
 ## Linux
 1. Open https://www.neuron.yale.edu/neuron/download with your web browser. 
@@ -20,21 +52,3 @@
 4. Open a terminal window.
 5. Type:
 echo  'export PYTHONPATH=/usr/local/nrn/lib/python:$PYTHONPATH' >> ~/.bashrc
-
-
-
-To test that NEURON was installed correctly open jupyter notebook or any python shell and check if the following commands are working:
-from neuron import gui
-from neuron import h
-
-
-
-## Troubleshooting:
-
-1. (Ubuntu) - Can not compile mod files with nrnivmodl, get "/usr/bin/ld: cannot find -lncurses"
-  Solution: 
-    you need to install ncurses development, in ubuntu this is how to install it:
-                              sudo apt-get install libncurses-dev
-          
-
-
